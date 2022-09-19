@@ -1,5 +1,6 @@
 package com.springcourse.springcourse;
 
+import com.springcourse.springcourse.domain.enums.Role;
 import jdk.jfr.internal.RequestEngine;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -17,6 +18,7 @@ public class User {
     private String name;
     private String email;
     private String password;
+    private Role role;
     private List<Request> requests = new ArrayList<Request>();
     private List<RequestStage> stages = new ArrayList<RequestStage>();
 }
