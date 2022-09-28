@@ -1,4 +1,5 @@
 package com.springcourse.springcourse;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -17,7 +18,12 @@ import javax.persistence.*;
 @Getter @Setter
 @Entity(name = "request")
 
-public class Request {
+public class Request implements Serializable{
+
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1l;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
