@@ -10,5 +10,5 @@ import java.util.function.LongConsumer;
 @Repository
 public interface RequestRepository extends JpaRepository<Request, Long> {
 
-    public List<Request> findAllOwnerId(Long id);
+    public List<Request> findAllByOwnerId(Long id);
 }
